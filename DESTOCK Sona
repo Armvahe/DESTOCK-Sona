@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destock Sona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Destock Sona</h1>
+        <nav>
+            <ul>
+                <li><a href="#hygiène">Hygiène</a></li>
+                <li><a href="#nourriture">Nourriture</a></li>
+                <li><a href="#boissons">Boissons</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#magasins">Nos Magasins</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="intro">
+        <h2>Bienvenue chez Destock Sona</h2>
+        <p>Votre magasin de déstockage pour les meilleures offres en hygiène, nourriture et boissons.</p>
+    </section>
+    
+    <section id="hygiène">
+        <h2>Produits d’Hygiène</h2>
+        <p>Découvrez nos produits d’hygiène à prix réduits.</p>
+        <!-- Exemple de produit -->
+        <div class="product">
+            <img src="gel_douche.jpg" alt="Gel douche">
+            <p>Gel Douche - 2.50€</p>
+        </div>
+    </section>
+
+    <section id="nourriture">
+        <h2>Nourriture</h2>
+        <p>Des produits alimentaires à prix cassés.</p>
+        <!-- Exemple de produit -->
+        <div class="product">
+            <img src="conserve.jpg" alt="Conserve">
+            <p>Conserve de légumes - 1.80€</p>
+        </div>
+    </section>
+
+    <section id="boissons">
+        <h2>Boissons</h2>
+        <p>Des boissons à prix imbattables.</p>
+        <!-- Exemple de produit -->
+        <div class="product">
+            <img src="jus_orange.jpg" alt="Jus d'orange">
+            <p>Jus d'orange - 2.00€</p>
+        </div>
+    </section>
+
+    <section id="magasins">
+        <h2>Nos Magasins</h2>
+        <p>Nous avons deux magasins :</p>
+        <ul>
+            <li>Magasin 1 - Adresse : Rue X, Ville</li>
+            <li>Magasin 2 - Adresse : Rue Y, Ville</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Vous avez des questions ? Contactez-nous :</p>
+        <form action="#" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Destock Sona. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#intro, #hygiène, #nourriture, #boissons, #magasins, #contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
